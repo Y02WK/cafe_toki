@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   transition: 0.5s;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(images/home.jpg) no-repeat fixed;
@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 
+/* CSS for navigation bar */
 .navbar {
   display: flex;
   list-style-type: none;
@@ -23,18 +24,38 @@ body {
 }
 
 .navbar > li {
-  /* display: inline-block; */
   margin-right: 2em;
-  /* color: rgba(255, 255, 255, 0.856); */
   color: rgba(108, 108, 112, 0.753);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .nav-home {
-  /* font-size: 1.5em; */
   flex: 1.5;
   margin-left: 1.5em;
 }
 
+.navlink {
+  padding-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+  color: black;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.nav-home:hover {
+  color: black;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+/* CSS for homepage */
 .page-home {
   display: flex;
   flex-direction: column;
@@ -58,6 +79,69 @@ body {
 
 .home-quote {
   margin-top: 1em;
-  /* font-family: "Parisienne", cursive;
-  font-size: 2em; */
+}
+
+.home-menu {
+  font-size: 1.1rem;
+  margin-top: 1em;
+  text-decoration: underline;
+  color: rgb(94, 190, 253);
+  cursor: pointer;
+}
+
+.home-menu:hover {
+  color: whitesmoke;
+  transition-property: color;
+  transition-duration: 0.4s;
+}
+
+/* CSS for menu page */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: 1px solid;
+  width: 95%;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: rgba(121, 121, 121, 0.36);
+}
+
+.menu-title {
+  text-decoration: underline;
+  color: rgb(199, 199, 199);
+}
+
+.menu-container {
+  margin: 0;
+  margin-bottom: 0.8em;
+}
+
+.menu-item {
+  margin-right: 2em;
+}
+
+/* CSS for contact page */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  border: 1px solid;
+  width: 95%;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: rgba(121, 121, 121, 0.36);
+}
+
+.contact-page > h1 {
+  text-decoration: underline;
+  color: rgb(199, 199, 199);
 }

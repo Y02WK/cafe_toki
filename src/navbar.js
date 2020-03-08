@@ -6,6 +6,8 @@ const createNavBar = () => {
   const titleNav = createHTMLElement('li', 'nav-home', 'cafe toki');
   const menuNav = createHTMLElement('li', 'navlink', 'Menu');
   const contactNav = createHTMLElement('li', 'navlink', 'Contact');
+  menuNav.setAttribute('id', 'menu-button');
+  contactNav.setAttribute('id', 'contact-button');
 
   const navBarContents = [titleNav, menuNav, contactNav];
   navBarContents.forEach(element => {
